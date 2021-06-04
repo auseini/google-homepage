@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            align-items: center;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            margin-right: 15px;
+            max-height: 40;
+            min-width: 50;
+            display: block;
+            color:gray;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .search-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .search-button {
+            width: 120px;
+            height: 30px;
+            border-radius: 5px;
+            border-width: thin;
+            margin: 5px;
+        }
+        .footer {
+            bottom: 0;
+            padding: 5px;
+        }   
+        .search-area{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 15rem;
+        }
+        .logo{
+            width: 375px;
+        }
+        .text-input{
+            width: 500px;
+            padding: .75rem;
+            border-radius: 30px;
+            border-width: thin;
+        }
+        .app {
+            margin-left: 15px;
+            width: 30px;
+            height: 30px;
+            background-image: url(https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aapps);
+        }
+    </style>
+</head>    
+<body>
+    <!-- create navbar at top of page -->
+    <nav id="nav-bar">
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
+
+        <li style="float:right;"><a href="#">Sign in</a></li>
+        <li style="float:right;"><a href="#"><button class="app" href="#"></button></li>
+        <li style="float:right;"><a href="#">Images</a></li>
+        <li style="float:right;"><a href="#">Gmail</a></li>
+    </ul>
+    </nav>        
+
+<main>
+    <!-- div that holds google logo, text entry box and search buttons -->
+    <div class="search-area">
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        
+        <input class="text-input" for="search-input" type="search">
+        
+        <form class="search-buttons">
+        <button class="search-button">Google Search</button>
+        <button class="search-button">I'm Feeling Lucky</button>
+        </form>
+    </div>
+</main>
+    <!-- footer form for other links-->
+    <footer class="footer">
+    <ul>
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search works</a></li>
+        
+        <li style="float:right;"><a href="#">Settings</a></li>
+        <li style="float:right;"><a href="#">Terms</a></li>
+        <li style="float:right;"><a href="#">Privacy</a></li>
+    </ul>
+    </footer>
+</body>
+</html>
